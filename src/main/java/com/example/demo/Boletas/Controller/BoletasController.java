@@ -1,6 +1,6 @@
-package com.example.demo.boletas.controller;
+package com.example.demo.Boletas.Controller;
 
-import com.example.demo.boletas.producer.BoletasProducer;
+import com.example.demo.Boletas.Producer.BoletasProducer;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,4 +1,4 @@
-package com.example.demo.boletas.producer;
+package com.example.demo.Boletas.Producer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
