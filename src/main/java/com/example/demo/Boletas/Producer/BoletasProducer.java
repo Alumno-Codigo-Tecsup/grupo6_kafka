@@ -11,7 +11,7 @@ public class BoletasProducer {
 
     private static final Logger logger = LoggerFactory.getLogger(BoletasProducer.class);
 
-    @Value("${kafka.topic.boletas:boletas-topic}")
+    @Value("${spring.kafka.topic.boletas:boletas-topic}")
     private String topic;
 
     private final KafkaTemplate<String, String> kafkaTemplate;

@@ -1,12 +1,13 @@
 package com.example.demo.Boletas.Consumer;
 
-import com.example.demo.Email.Model.EmailNotification;
-import com.example.demo.Email.Service.EmailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
+
+import com.example.demo.Email.Model.EmailNotification;
+import com.example.demo.Email.Service.EmailService;
 
 @Component
 public class BoletasConsumer {
@@ -22,7 +23,7 @@ public class BoletasConsumer {
         this.emailService = emailService;
     }
 
-    @KafkaListener(topics = "${kafka.topic.boletas}", groupId = "boletas-group")
+    @KafkaListener(topics = "${spring.kafka.topic.boletas}", groupId = "boletas-group")
     public void listen(String message) {
         logger.info("✅ Mensaje recibido: {}", message);
 
